@@ -19,9 +19,15 @@ export default function Header() {
           Wedding Passport
         </div>
         <nav className={styles.navLinks}>
-          <a href="#details">Detalii</a>
-          <a href="#program">Program</a>
-          <a href="#locatie">Locație</a>
+          <a className={styles.link} href="#details">
+            Detalii
+          </a>
+          <a className={styles.link} href="#program">
+            Program
+          </a>
+          <a className={styles.link} href="#locatie">
+            Locație
+          </a>
           <a
             className={styles.btn + " " + styles.btnPrimary}
             href="https://forms.gle/Mwhu1WYpM6jQvEM49"
