@@ -122,14 +122,12 @@
   font-size: 1.05rem;
 }
 
+
 /* —— Mobile tweaks —— */
 @media (max-width: 880px) {
   .container {
     width: min(1100px, 94%);
   }
-
-
-
 
   .grid3 {
     grid-template-columns: 1fr;
@@ -178,6 +176,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .btn,
   .row {
     transition: none;

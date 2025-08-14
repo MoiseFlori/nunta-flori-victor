@@ -14,15 +14,16 @@ export default function Details() {
               "10 octombrie 2025, 15:30",
               " Biserica ”Adormirea Maicii Domnului” ",
               "Gruiu, Călărași",
+              "Vom porni împreună în călătoria noastră, cu emoție și zâmbete. ✈️❤️",
             ]}
           />
           <DetailCard
             title="Recepție"
             icon="🎉"
             lines={[
-              "Invitați: 20:00 – Boarding & Welcome Drinks",
+              "INVITATI: 20:00 – Boarding & Welcome Drinks",
               "Vă rugăm să fiți la bord până la această oră,pentru a decola împreună spre petrecere",
-              "Sosirea mirilor: 21:00 – Boarding Gate se închide",
+              "SOSIREA MIRILOR: 21:00 – Boarding Gate se închide",
               "Restaurant Briana Ballroom – Sala Hollywood",
               "Bulevardul Basarabia 256, București 030352",
             ]}
@@ -32,7 +33,9 @@ export default function Details() {
             icon="🧥"
             lines={[
               "Travel chic",
-              "Încălțăminte confortabilă pentru a cuceri ringul de dans",
+              "Fără reguli stricte — alege ținuta care te face să te simți bine!",
+              "Cel mai important: confort și voie bună.",
+              "Și, desigur, să fii pregătit(ă) să nu lipsești de pe ringul de dans! 💃🕺",
             ]}
           />
         </div>

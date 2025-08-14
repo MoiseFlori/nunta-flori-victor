@@ -31,11 +31,11 @@ export default function Timeline() {
             pentru toți pasagerii 🧇🍓
           </li>
           <li>
-            <span>Pe tot parcursul serii</span> Cabină foto – punctul de control
-            pentru amintiri amuzante, fără pașaport necesar 📷🎭
+            <span>Pe tot parcursul serii</span> &nbsp; Cabină foto – punctul de
+            control pentru amintiri amuzante, fără pașaport necesar 📷🎭
           </li>
           <li>
-            <span>Până dimineața</span> Ringul de dans – pista oficială de
+            <span>Până dimineața</span>&nbsp; Ringul de dans – pista oficială de
             aterizare a celor mai tari mișcări 💃🛬🕺
           </li>
         </ul>
