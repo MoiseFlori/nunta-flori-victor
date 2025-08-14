@@ -1,0 +1,161 @@
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: saturate(1.2) blur(6px);
+  background: rgba(233, 243, 238, 0.8);
+  border-bottom: 1px solid #b8d0c3;
+}
+
+.navInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #046d4d;
+}
+
+.navLinks  {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #a8cbb9;
+  transition: transform .06s ease;
+  text-decoration: none;
+  color: #046d4d;
+  font-weight: 600;
+  background: white;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: #578a73;
+}
+
+.btnPrimary {
+  background: #046d4d;
+  color: white;
+  border-color: transparent;
+}
+
+.btnGhost {
+  background: white;
+}
+
+.btnLg {
+  padding: 14px 22px;
+  font-size: 1.05rem;
+}
+
+.footer {
+  border-top: 1px solid #b8d0c3;
+  padding: 18px 0;
+  background: rgba(233, 243, 238, 0.8);
+}
+
+.footerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #046d4d;
+}
+
+.footLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.footLinks a {
+  color: #046d4d;
+  text-decoration: none;
+}
+
+.footLinks a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 900px) {
+  .container {
+    width: min(1100px, 94%);
+  }
+
+  .navInner {
+    padding: 10px 0;
+  }
+
+  .navLinks {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .btnLg {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navInner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .brand {
+    text-align: center;
+    letter-spacing: .06em;
+  }
+
+  .navLinks {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 44px;
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .footLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}

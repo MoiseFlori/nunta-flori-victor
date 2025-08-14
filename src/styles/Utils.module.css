@@ -1,0 +1,190 @@
+:root {
+  --muted: #5b7c6b;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.alt {
+  background: linear-gradient(180deg, rgba(4, 109, 77, 0.06), transparent 60%);
+}
+
+.sectionTitle {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 0 0 18px;
+  color: #046d4d;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px dashed #a8cbb9;
+  padding-left: 16px;
+}
+
+.timeline li {
+  margin: 12px 0;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: .55em;
+  width: 8px;
+  height: 8px;
+  background: #046d4d;
+  border-radius: 50%;
+}
+
+.timeline span {
+  display: inline-block;
+  min-width: 64px;
+  font-weight: 700;
+  color: #046d4d;
+}
+
+.mapWrap {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #c9d8d1;
+  box-shadow: 0 8px 24px rgba(4, 109, 77, 0.08);
+}
+
+.mapWrap iframe {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  display: block;
+}
+
+.center {
+  text-align: center;
+  color: #046d4d;
+}
+
+.linkCenter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0 4px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #a8cbb9;
+  transition: transform .06s ease;
+  text-decoration: none;
+  color: #046d4d;
+  font-weight: 600;
+  background: white;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: #64a588;
+}
+
+.btnPrimary {
+  background: #046d4d;
+  color: white;
+  border-color: transparent;
+}
+
+.btnGhost {
+  background: white;
+}
+
+.btnLg {
+  padding: 14px 22px;
+  font-size: 1.05rem;
+}
+
+/* —— Mobile tweaks —— */
+@media (max-width: 880px) {
+  .container {
+    width: min(1100px, 94%);
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+
+
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 44px;
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  .mapWrap iframe {
+    height: 300px;
+  }
+
+  .timeline {
+    padding-left: 14px;
+  }
+
+  .timeline li {
+    margin: 14px 0;
+  }
+
+  .timeline li::before {
+    width: 10px;
+    height: 10px;
+    left: -11px;
+  }
+
+  .timeline span {
+    min-width: 72px;
+  }
+}
+
+/* Extra mici */
+@media (max-width: 420px) {
+  .mapWrap iframe {
+    height: 260px;
+  }
+}
+
+/* Respectă preferința de mișcare redusă */
+@media (prefers-reduced-motion: reduce) {
+
+  .btn,
+  .row {
+    transition: none;
+  }
+}

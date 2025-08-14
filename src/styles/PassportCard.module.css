@@ -1,0 +1,66 @@
+.passport {
+  display: grid;
+  gap: 14px;
+}
+
+.cover {
+  background: linear-gradient(135deg, #046d4d, #5b7c6b);
+  color: #f5f9f7;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 16px 40px rgba(4, 109, 77, 0.25);
+  border: 2px solid rgba(184, 208, 195, 0.6);
+
+  text-align: center;
+}
+
+.emblem {
+  font-size: 46px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .25));
+}
+
+.coverText {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.small {
+  font-weight: 600;
+  opacity: .9;
+}
+
+.page {
+  background: #fdfefc;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(4, 109, 77, 0.12);
+  border: 1px solid #c9d8d1;
+
+}
+
+.dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 14px;
+}
+
+.page dt {
+  color: #5b7c6b;
+
+  font-weight: 700;
+}
+
+.page dd {
+  margin: 0;
+  font-weight: 700;
+  color: #046d4d;
+
+}
+
+.muted {
+  color: #5b7c6b;
+
+}

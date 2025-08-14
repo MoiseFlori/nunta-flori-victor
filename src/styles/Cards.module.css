@@ -1,0 +1,46 @@
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: #fdfefc;
+  border: 1px solid #c9d8d1;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(4, 109, 77, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(4, 109, 77, 0.15);
+}
+
+.card h3 {
+  margin: 4px 0 8px;
+  color: #046d4d;
+}
+
+.cardIcon {
+  font-size: 24px;
+  color: #5b7c6b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 880px) {
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
