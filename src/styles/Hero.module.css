@@ -1,10 +1,62 @@
 .hero {
   position: relative;
-  padding: 72px 0;
+  padding: 40px 0;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(4, 109, 77, 0.08), rgba(184, 208, 195, 0.15));
   border-bottom: 2px solid rgba(4, 109, 77, 0.15);
 }
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.aboutImage {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.glowRing {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(50, 246, 1, 0.85) 15%, rgba(0, 0, 0, 0) 70%);
+  box-shadow: 10px 5px 25px rgba(93, 144, 80, 0.9), 0 0 50px rgba(50, 246, 1, 0.6);
+  animation: glow 1.5s infinite alternate ease-in-out;
+  z-index: 1;
+}
+
+@keyframes glow {
+  from {
+    transform: scale(1);
+    opacity: 0.9;
+    box-shadow: 0 0 25px rgb(82, 134, 69), 0 0 50px rgba(53, 88, 45, 0.8);
+  }
+
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 40px rgb(115, 158, 105), 0 0 80px rrgba(57, 90, 49, 0.9)
+  }
+}
+
+
 
 .grid {
   display: grid;

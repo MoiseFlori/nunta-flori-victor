@@ -1,10 +1,23 @@
 import styles from "../styles/Layouts.module.css";
 
+const ICON = import.meta.env.BASE_URL + "wedding.png";
 export default function Header() {
   return (
     <header className={styles.nav}>
       <div className={styles.container + " " + styles.navInner}>
-        <div className={styles.brand}>Wedding Passport</div>
+        <div className={styles.brand}>
+          <img
+            src={ICON}
+            alt="Wedding Icon"
+            style={{
+              height: "28px",
+              width: "28px",
+              marginRight: "8px",
+              verticalAlign: "middle",
+            }}
+          />
+          Wedding Passport
+        </div>
         <nav className={styles.navLinks}>
           <a href="#details">Detalii</a>
           <a href="#program">Program</a>

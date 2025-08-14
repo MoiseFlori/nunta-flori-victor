@@ -6,6 +6,7 @@ import Location from "./components/Location";
 import Rsvp from "./components/Rsvp";
 import InfoGrid from "./components/InfoGrid";
 import layout from "./styles/Layouts.module.css";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -19,16 +20,9 @@ export default function App() {
         <Rsvp />
         <InfoGrid />
       </main>
-      <footer className={layout.footer}>
-        <div className={layout.container}>
-          <div>© 2025 Flori & Victor · Cu drag, vă așteptăm!</div>
-          <nav className={layout.footLinks}>
-            <a href="#details">Detalii</a>
-            <a href="#program">Program</a>
-            <a href="#locatie">Locație</a>
-          </nav>
-        </div>
-      </footer>
+ 
+        <Footer />
+
     </div>
   );
 }

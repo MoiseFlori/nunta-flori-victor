@@ -128,9 +128,6 @@
     width: min(1100px, 94%);
   }
 
-  .section {
-    padding: 40px 0;
-  }
 
 
 
@@ -173,16 +170,14 @@
   }
 }
 
-/* Extra mici */
+
 @media (max-width: 420px) {
   .mapWrap iframe {
     height: 260px;
   }
 }
 
-/* Respectă preferința de mișcare redusă */
 @media (prefers-reduced-motion: reduce) {
-
   .btn,
   .row {
     transition: none;

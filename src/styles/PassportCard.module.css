@@ -44,12 +44,11 @@
 .dl {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 8px 14px;
+  gap: 8px 80px;
 }
 
 .page dt {
   color: #5b7c6b;
-
   font-weight: 700;
 }
 

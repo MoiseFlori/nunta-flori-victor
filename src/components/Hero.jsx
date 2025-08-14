@@ -1,13 +1,19 @@
-import hero from '../styles/Hero.module.css'
-import utils from '../styles/Utils.module.css'
-import PassportCard from './PassportCard'
+import hero from "../styles/Hero.module.css";
+import utils from "../styles/Utils.module.css";
+import PassportCard from "./PassportCard";
 
-export default function Hero(){
+const PROFILE = import.meta.env.BASE_URL + "hero-bg.jpg";
+
+export default function Hero() {
   return (
     <section className={hero.hero}>
       <div className={utils.container + " " + hero.grid}>
-        <div>
-          <p className={utils.eyebrow}>Invitație tip pașaport · Temă travel</p>
+        <div className={hero.content}>
+          <div className={hero.aboutImage}>
+            <div className={hero.glowRing}></div>
+            <img src={PROFILE} alt="Poza cu noi" className={hero.profileImg} />
+          </div>
+    
           <h1 className={hero.title}>Flori & Victor</h1>
           <p className={hero.subtitle}>
             10 octombrie 2025 · București, ROMÂNIA

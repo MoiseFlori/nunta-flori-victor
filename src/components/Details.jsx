@@ -20,9 +20,10 @@ export default function Details() {
             title="Recepție"
             icon="🎉"
             lines={[
-              "după ceremonie, 20:00",
-              "Restaurant Briana Ballroom",
-              "sala Hollywood",
+              "Invitați: 20:00 – Boarding & Welcome Drinks",
+              "Vă rugăm să fiți la bord până la această oră,pentru a decola împreună spre petrecere",
+              "Sosirea mirilor: 21:00 – Boarding Gate se închide",
+              "Restaurant Briana Ballroom – Sala Hollywood",
               "Bulevardul Basarabia 256, București 030352",
             ]}
           />
