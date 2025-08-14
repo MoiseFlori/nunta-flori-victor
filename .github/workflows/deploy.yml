@@ -1,0 +1,32 @@
+name: Deploy Vite to GH Pages
+
+on:
+  push:
+    branches: [main] # rulează la push pe branch-ul main
+  workflow_dispatch: # poți porni manual din Actions
+
+permissions:
+  contents: write # necesar pt. gh-pages
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+      - run: npm run build
+
+      # SPA fallback pentru React Router (opțional dar recomandat)
+      - run: cp dist/index.html dist/404.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
